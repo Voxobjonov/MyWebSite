@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+</head>
+<body id="body">
+    <div class="header" id="HH">
+        <div class="bigContainer">
+            <div class="Navbar">
+                <a href="index.html" class="navbarLogo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <div id="mask" onclick="kiritish()"></div>
+                <div class="asosiy" id="menu">
+                    <div class="left">
+                        <div class="navbarNav">
+                            <a href="#">Bosh menu</a>
+                            <a href="catalog.html">Katalog</a>
+                            <div class="dropdown">
+                                <button id="dropdownid" onclick="dropdown()">
+                                    Kompaniyamiz
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="dropdownSvg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </button>
+                                <div class="dropdownMenu" id="dropdown">
+                                    
+                                    <a href="vacancies.html">Vakansiya</a>
+                                    <a href="certificates.html">Sertifikat</a>
+                    
+                                </div>
+                            </div>
+                            <a href="news.html">Yangiliklar</a>
+                            <a href="contacts.html">Kontakt</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="language">
+                            <a href="#" class="active">Рuscha</a>
+                            <a href="#" class="en">English</a>
+                        </div>
+                        <div class="location callbox">
+                            <a href="https://www.google.com/maps/place/Ташкент,+Узбекистан/@41.2825974,69.2793667,11z/data=!4m2!3m1!1s0x38ae8b0cc379e9c3:0xa5a9323b4aa5cb98" target="_blank">
+                                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.99832 16.7767C7.99832 16.7767 1.52832 12.8892 1.52832 7.70335C1.52832 4.12335 4.42999 1.22168 8.00999 1.22168C11.59 1.22168 14.4917 4.12335 14.4917 7.70335C14.4917 12.8892 7.99832 16.7767 7.99832 16.7767Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.00999 10.2967C9.44179 10.2967 10.6025 9.13598 10.6025 7.70418C10.6025 6.27238 9.44179 5.11168 8.00999 5.11168C6.57819 5.11168 5.41749 6.27238 5.41749 7.70418C5.41749 9.13598 6.57819 10.2967 8.00999 10.2967Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <div>
+                                    <p class="m-0">Manzil:</p>
+                                    <p class="m-0 num">Lokatsiyani belgilash</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="call callbox">
+                            <a href="tel:+998 90 988-8989">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.9892 1.27094C14.16 1.27094 16.73 3.84094 16.73 7.01177M10.9892 4.22094C12.53 4.22094 13.78 5.47011 13.78 7.01177M7.00501 10.9709C7.75501 11.6901 8.63417 12.2751 9.60584 12.6901L10.0383 12.8743L11.3675 11.5243C11.6975 11.1893 12.175 11.0443 12.6358 11.1409L15.8558 11.8151C16.4008 11.9309 16.79 12.4118 16.79 12.9684V15.2868C16.79 16.1159 16.1183 16.7876 15.2892 16.7876H14.5767C11.2983 16.7876 8.06334 15.7018 5.61667 13.5201C5.41501 13.3409 5.21917 13.1551 5.02834 12.9651L5.05917 12.9959C4.86834 12.8051 4.68334 12.6093 4.50417 12.4076C2.32167 9.96177 1.23584 6.72677 1.23584 3.44844V2.73594C1.23584 1.90677 1.90751 1.23511 2.73667 1.23511H5.05501C5.61167 1.23511 6.09251 1.62427 6.20834 2.16927L6.88334 5.38927C6.97917 5.84927 6.83501 6.32761 6.50001 6.65761L5.15001 7.98677L5.33417 8.41927C5.74917 9.39011 6.28501 10.2209 7.00501 10.9709Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <div>
+                                    <p class="m-0">Aloqa uchun tel:</p>
+                                    <p class="m-0 num">+998 90 988-8989</p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick="kiritish()" class="menuX"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <button onclick="chiqarish()" class="menuX" id="open"> 
+                    <img src="img/menuX.png" alt="menuX">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="headerBottom" id="HB"></div>
+    
+    <div class="carousell">
+        <div class="bigContainer">
+            <section class="carousel-home vertical slider">
+                <div class="slider1">
+                    <div class="container">
+                        <div class="box">
+                            <div class="textbox">
+                                <h1>yuqori sifatli qurilish mahsulotlari</h1>
+                                <p>"Kamensk-Uralsk rangli metallarni qayta ishlash zavodi" OAJ ("KUZOTsM" OAJ) mis, nikel, rux va ular asosidagi qotishmalardan keng turdagi metall buyumlar ishlab chiqaradi. Zavod sanoatda yetakchi hisoblanadi.</p>
+                                <a href="catalog.html">
+                                    Каталог продукций
+                                    <img src="img/buttonYellow.png" alt="button">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider2">
+                    <div class="container">
+                        <div class="box">
+                            <div class="textbox">
+                                <h1>yuqori sifatli qurilish mahsulotlari</h1>
+                                <p>"Kamensk-Uralsk rangli metallarni qayta ishlash zavodi" OAJ ("KUZOTsM" OAJ) mis, nikel, rux va ular asosidagi qotishmalardan keng turdagi metall buyumlar ishlab chiqaradi. Zavod sanoatda yetakchi hisoblanadi..</p>
+                                <a href="catalog.html">
+                                    Каталог продукций
+                                    <img src="img/buttonYellow.png" alt="button">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="catalog">
+        <div class="bigContainer">
+            <div class="headerbox">
+                <div class="text">
+                    <h1>Maxsulotlar ro'yxati</h1>
+                    <p>NEXUS zavodi 100 dan ortiq turdagi qurilish  mahsulotlarini ishlab chiqaradi</p>
+                </div>
+                <a href="catalog.html">Hamma maxsulotlar<img src="img/button.png" alt="button"></a>
+            </div>
+            <div class="box">
+                <div class="cols">
+                    <div class="imgbox  imgKV"  id="imgKV">
+                        <img src="img/catalog4.png" alt="catalog1">
+                    </div>
+                    <div class="textbox">
+                        <h6>"Kamensk-Uralskiy" YoAJ</h6>
+                        <a href="catalog2.html">Amerikancha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div class="imgbox  imgKV"  id="imgKV">
+                        <img src="img/catalog2.png" alt="catalog1">
+                    </div>
+                    <div class="textbox">
+                        <h6>"Kamensk-Uralskiy" YoAJ</h6>
+                        <a href="catalog2.html">Amerikancha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div class="imgbox  imgKV"  id="imgKV">
+                        <img src="img/banner.jpg" alt="catalog1">
+                    </div>
+                    <div class="textbox">
+                        <h6>"Kamensk-Uralskiy" YoAJ</h6>
+                        <a href="catalog2.html">Amerikancha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div class="imgbox  imgKV"  id="imgKV">
+                        <img src="img/image 5.png" alt="catalog1">
+                    </div>
+                    <div class="textbox">
+                        <h6>"Kamensk-Uralskiy" YoAJ</h6>
+                        <a href="catalog2.html">Amerikancha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="cols">
+                    <div class="imgbox  imgKV"  id="imgKV">
+                        <img src="img/catalog2.png" alt="catalog1">
+                    </div>
+                    <div class="textbox">
+                        <h6>"Kamensk-Uralskiy" YoAJ</h6>
+                        <a href="catalog2.html">Amerikancha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div class="imgbox  imgKV"  id="imgKV">
+                        <img src="img/catalog3.png" alt="catalog1">
+                    </div>
+                    <div class="textbox">
+                        <h6>"Kamensk-Uralskiy" YoAJ</h6>
+                        <a href="catalog2.html">Amerikancha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div class="imgbox  imgKV"  id="imgKV">
+                        <img src="img/catalog4.png" alt="catalog1">
+                    </div>
+                    <div class="textbox">
+                        <h6>"Kamensk-Uralskiy" YoAJ</h6>
+                        <a href="catalog2.html">Amerikancha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div class="imgbox  imgKV"  id="imgKV">
+                        <img src="img/catalog5.png" alt="catalog1">
+                    </div>
+                    <div class="textbox">
+                        <h6>"Kamensk-Uralskiy" YoAJ</h6>
+                        <a href="catalog2.html">Amerikancha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div class="imgbox  imgKV"  id="imgKV">
+                        <img src="img/catalog6.png" alt="catalog1">
+                    </div>
+                    <div class="textbox">
+                        <h6>"Kamensk-Uralskiy" YoAJ</h6>
+                        <a href="catalog2.html">Amerikancha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div class="imgbox  imgKV"  id="imgKV">
+                        <img src="img/catalog4.png" alt="catalog1">
+                    </div>
+                    <div class="textbox">
+                        <h6>"Kamensk-Uralskiy" YoAJ</h6>
+                        <a href="catalog2.html">Аmerikancha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div class="imgbox  imgKV"  id="imgKV">
+                        <img src="img/catalog7.png" alt="catalog1">
+                    </div>
+                    <div class="textbox">
+                        <h6>"Kamensk-Uralskiy" YoAJ</h6>
+                        <a href="catalog2.html">Аmerikancha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cols colse">
+                    <div class="imgbox  imgKV"  id="imgKV">
+                        <img src="img/catalog4.png" alt="catalog1">
+                    </div>
+                    <div class="textbox">
+                        <h6>"Kamensk-Uralskiy" YoAJ</h6>
+                        <a href="catalog2.html">Аmerikancha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="request">
+        <div class="bigContainer">
+            <div class="container">
+                <div class="left">
+                    <h1>Zayavka jo'natish</h1>
+                    <p>Bizga telefon raqamingiz va ismingizni jo'nating.Biz siz bilan bog'lanamiz!</p>
+                    <input type="text" placeholder="ismingiz" id="name">
+                    <input type="text" placeholder="ismingiz" id="name">
+                    <button type="submit">
+                        Jo'natish
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="right d-flex">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/Frame 269.svg" alt="usta">
+                        </div>
+                        <div class="textbox">
+                            <img src="img/logo.png" alt="">
+                            <h4>Nostandart mahsulotlar ishlab chiqarish bo'yicha so'rovlar mavjudй</h4>
+                            <p>Kontakt ma'lumotlaringizni qoldiring va biz siz bilan bog'lanamiz!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reclama">
+        <div class="bigContainer">
+            <div class="row">
+                <div class="col-md-4 col-8 rasm mb-3 mb-md-0">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="col-md-2 col-4 rasm mb-3 mb-md-0">
+                    <img src="img/image 6 (1).png" alt="">
+                </div>
+                <div class="col-md-4 col-8 text">
+                    <h4>Nexus Future Technologies</h4>
+                    <p class="mb-0">2014-yilda tashkil etilgan “Nexus Future Technologies” xususiy korxonasi mahsulot ishlab chiqaradi. Nexus Future Technologies xususiy korxonasi.</p><p class="mb-0 ikki">2014 yilda tashkil etilgan ishlab chiqaruvchilar. 2014-yilda tashkil etilgan Nexus Future Technologies xususiy korxonasi ishlab chiqaradi 2014-yilda tashkil etilgan Nexus Future Technologies xususiy korxonasi ishlab chiqaradi. </p>
+                    <a href="vacancies.html">Keyingisi
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-md-2 col-4 rasm">
+                    <img src="img/image 5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="partners">
+        <div class="bigContainer">
+            <section class="regular slider">
+                <div class="imgbox Pimg" id="Pimg">
+                  <img src="img/catalog1.png">
+                </div>
+                <div class="imgbox Pimg" id="Pimg">
+                  <img src="img/turonbank 1 (1).png">
+                </div>
+                <div class="imgbox Pimg" id="Pimg">
+                  <img src="img/turonbank 1 (1).png">
+                </div>
+                <div class="imgbox Pimg" id="Pimg">
+                  <img src="img/turonbank 1 (1).png">
+                </div>
+                <div class="imgbox Pimg" id="Pimg">
+                  <img src="img/turonbank 1 (1).png">
+                </div>
+                <div class="imgbox Pimg" id="Pimg">
+                  <img src="img/turonbank 1 (1).png">
+                </div>
+                <div class="imgbox Pimg" id="Pimg">
+                    <img src="img/turonbank 1 (1).png">
+                  </div>
+              </section>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="container">
+            <div class="ftop">
+                <div class="box">
+                    <a href="index.html">
+                        <div class="imgbox">
+                            <svg width="133" height="40" viewBox="0 0 133 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5235 1.98998L19.7898 0.248752L5.07884e-06 20.1244L19.7898 40L21.5235 38.2588L3.46741 20.1244L21.5235 1.98998Z" fill="currentColor"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M45.5236 21.6169L47.2573 19.8756L27.4676 -8.68791e-07L7.67778 19.8756L9.41149 21.6169L27.4676 3.48246L45.5236 21.6169Z" fill="currentColor"/>
+                                <path d="M67.2564 35.4944L59.8414 14.6902H59.6794V35.4944H56.9646V7.53869H59.8414L67.1349 27.896H67.3375V7.53869H70.0117V35.4944H67.2564Z" fill="currentColor"/>
+                                <path d="M74.5334 35.4944V7.53869H85.1493V10.1392H77.3697V20.0538H84.1769V22.6543H77.3697V32.8939H85.1493V35.4944H74.5334Z" fill="currentColor"/>
+                                <path d="M98.9533 35.4944L94.4557 23.7514H94.2126L89.715 35.4944H86.8381L92.3892 21.4353L86.9192 7.53869H89.8771L94.3342 19.0379H94.5367L98.9533 7.53869H101.871L96.3601 21.354L101.952 35.4944H98.9533Z" fill="currentColor"/>
+                                <path d="M117.529 7.53869V23.4263C117.529 27.0291 117.407 29.6432 117.164 31.2686C116.921 32.8939 116.34 34.0587 115.422 34.763C114.53 35.4673 113.072 35.8195 111.046 35.8195C108.993 35.8195 107.507 35.4673 106.589 34.763C105.697 34.0587 105.13 32.8939 104.887 31.2686C104.644 29.6432 104.522 27.0291 104.522 23.4263V7.53869H107.358V24.8891C107.358 27.4355 107.426 29.2504 107.561 30.334C107.696 31.4175 108.007 32.176 108.493 32.6095C109.006 33.0158 109.857 33.219 111.046 33.219C112.234 33.219 113.072 33.0158 113.558 32.6095C114.071 32.176 114.395 31.4175 114.53 30.334C114.665 29.2504 114.733 27.4355 114.733 24.8891V7.53869H117.529Z" fill="currentColor"/>
+                                <path d="M126.801 35.8195C125.936 35.8195 124.991 35.7653 123.964 35.657C122.938 35.5486 122.046 35.4132 121.29 35.2506V32.772C123.181 33.07 124.734 33.219 125.95 33.219C126.814 33.219 127.503 33.1512 128.016 33.0158C128.556 32.8803 129.002 32.623 129.353 32.2438C129.677 31.9187 129.894 31.4175 130.002 30.7403C130.11 30.036 130.164 29.0879 130.164 27.896C130.164 26.2707 130.11 25.16 130.002 24.5641C129.921 23.9681 129.704 23.5482 129.353 23.3044C129.029 23.0335 128.394 22.8033 127.449 22.6137L123.6 21.8416C122.789 21.6791 122.181 21.3134 121.776 20.7445C121.371 20.1757 121.114 19.4443 121.006 18.5503C120.898 17.6564 120.844 16.4509 120.844 14.934C120.844 12.1709 121.331 10.1934 122.303 9.00149C123.302 7.80958 124.95 7.21362 127.246 7.21362C128.3 7.21362 129.286 7.28135 130.204 7.41679C131.123 7.52515 131.771 7.64705 132.149 7.78249V10.2205C131.69 10.1121 131.069 10.0173 130.285 9.93606C129.502 9.85479 128.732 9.81416 127.976 9.81416C126.976 9.81416 126.193 9.92251 125.626 10.1392C125.058 10.3288 124.626 10.6404 124.329 11.0738C124.059 11.5072 123.883 12.0219 123.802 12.6179C123.721 13.2138 123.681 13.9858 123.681 14.934C123.681 16.2071 123.721 17.1282 123.802 17.697C123.91 18.2659 124.086 18.6722 124.329 18.916C124.599 19.1327 125.045 19.2953 125.666 19.4036L129.11 20.135C130.083 20.3517 130.839 20.6497 131.379 21.029C131.919 21.3811 132.338 22.0177 132.635 22.9387C132.797 23.318 132.892 23.8462 132.919 24.5234C132.973 25.2006 133 26.1758 133 27.449C133 29.5349 132.824 31.1737 132.473 32.3657C132.122 33.5305 131.501 34.3973 130.609 34.9662C129.745 35.5351 128.475 35.8195 126.801 35.8195Z" fill="currentColor"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M43.838 23.3821L36.1902 31.0631L30.5912 25.4398C30.9802 24.8499 31.2067 24.1426 31.2067 23.3821C31.2067 21.3214 29.5434 19.6509 27.4916 19.6509C25.4398 19.6509 23.7765 21.3214 23.7765 23.3821C23.7765 25.4428 25.4398 27.1133 27.4916 27.1133C28.2488 27.1133 28.9531 26.8858 29.5404 26.4951L35.1394 32.1184L27.4916 39.7994L11.1453 23.3821L27.4916 6.96484L43.838 23.3821ZM29.9683 23.3821C29.9683 24.7559 28.8594 25.8696 27.4916 25.8696C26.1237 25.8696 25.0149 24.7559 25.0149 23.3821C25.0149 22.0083 26.1237 20.8947 27.4916 20.8947C28.8594 20.8947 29.9683 22.0083 29.9683 23.3821Z" fill="#FF7A00"/>
+                                <ellipse cx="34.5503" cy="30.969" rx="4.82961" ry="4.85056" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <p>Qurilish mahsulotlari ishlab chiqaruvchisi</p>
+                </div>
+                <div class="box link">
+                    <a href="1">Bosh menu</a>
+                    <a href="2">Katalog</a>
+                    <a href="3">Yangliklar</a>
+                    <a href="4">Kontakt</a>
+                </div>
+                <div class="box link">
+                    <a href="#">Kompaniyamiz</a>  
+                    <a href="#">Sertifikatlar</a> 
+                    <a href="#">Руководство</a>
+                </div>
+                <div class="box1">
+                    <div class="box2">
+                        <a href="#" class="d-flex">
+                            <svg class="mt-2 me-2 icon" width="20" height="20" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99832 16.7767C7.99832 16.7767 1.52832 12.8892 1.52832 7.70335C1.52832 4.12335 4.42999 1.22168 8.00999 1.22168C11.59 1.22168 14.4917 4.12335 14.4917 7.70335C14.4917 12.8892 7.99832 16.7767 7.99832 16.7767Z" stroke="#FF7A00" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.00999 10.2967C9.44179 10.2967 10.6025 9.13598 10.6025 7.70418C10.6025 6.27238 9.44179 5.11168 8.00999 5.11168C6.57819 5.11168 5.41749 6.27238 5.41749 7.70418C5.41749 9.13598 6.57819 10.2967 8.00999 10.2967Z" stroke="#FF7A00" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p>Manzil: <br>Toshkent,Eski shahar bozori</p>
+                        </a>
+                    </div>
+                    <div class="box2">
+                        <a href="#" class="d-flex align-items-center">
+                            <svg class="me-2 icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.9892 1.27094C14.16 1.27094 16.73 3.84094 16.73 7.01177M10.9892 4.22094C12.53 4.22094 13.78 5.47011 13.78 7.01177M7.00501 10.9709C7.75501 11.6901 8.63417 12.2751 9.60584 12.6901L10.0383 12.8743L11.3675 11.5243C11.6975 11.1893 12.175 11.0443 12.6358 11.1409L15.8558 11.8151C16.4008 11.9309 16.79 12.4118 16.79 12.9684V15.2868C16.79 16.1159 16.1183 16.7876 15.2892 16.7876H14.5767C11.2983 16.7876 8.06334 15.7018 5.61667 13.5201C5.41501 13.3409 5.21917 13.1551 5.02834 12.9651L5.05917 12.9959C4.86834 12.8051 4.68334 12.6093 4.50417 12.4076C2.32167 9.96177 1.23584 6.72677 1.23584 3.44844V2.73594C1.23584 1.90677 1.90751 1.23511 2.73667 1.23511H5.05501C5.61167 1.23511 6.09251 1.62427 6.20834 2.16927L6.88334 5.38927C6.97917 5.84927 6.83501 6.32761 6.50001 6.65761L5.15001 7.98677L5.33417 8.41927C5.74917 9.39011 6.28501 10.2209 7.00501 10.9709Z" stroke="#FF7A00" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p>Biz bilan bog'lanish: <br><span>+998 90 988-8989</span></p>
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="fbottom">
+                <p>“NEXUS FUTURE TECHNOLOGIES” sinse 2014</p>
+                <p>Sayt quruvchisi <a href="https://spacemos.uz/">SPACEMOS</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).on('ready', function () {
+            $(".vertical").slick({
+                dots: true,
+                vertical: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                pauseOnFocus: false,
+                swipe: false,
+                adaptiveHeight: true
+            });
+            $(".regular").slick({
+                dots: false,
+                infinite: true,
+                swipe: true,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                responsive: [
+                    {
+                        breakpoint: 1400,
+                        settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                        }
+                    },
+                    // {
+                    //     breakpoint: 576,
+                    //     settings: {
+                    //     slidesToShow: 2,
+                    //     slidesToScroll: 1
+                    //     }
+                    // },
+
+                ]
+            });
+        });
+        
+    </script>
+</body>
+</html>
